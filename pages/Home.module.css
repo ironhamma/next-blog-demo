@@ -1,0 +1,80 @@
+.root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  transition: .3s all;
+}
+
+.links {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: calc(50% - 2rem);
+  margin: 1rem;
+  height: 15rem;
+  background-color: rgb(40, 136, 40);
+  border-radius: 5px;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  transition: 0.3s all;
+}
+
+.item:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(240, 238, 225, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.item span {
+  position: relative;
+  z-index: 2;
+}
+
+.image {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  height: 80%;
+}
+
+.dark{
+  background-color: black;
+  color: white !important;
+}
+
+.toggler{
+  cursor: pointer;
+}
