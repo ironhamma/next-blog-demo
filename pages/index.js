@@ -26,7 +26,7 @@ export default function Home() {
         className={cn(styles.root, { [styles.dark]: theme === THEMES.DARK })}
       >
         <h1 className="title">
-          Deployed!
+          Deployed again!
         </h1>
         <div className={styles.links}>
           <Link href="/artists">
